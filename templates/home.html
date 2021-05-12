@@ -1,0 +1,34 @@
+<center><table><tr><td></td><td><h1>HEY! YOUR WINE COLOR PREDICTOR IS RUNNING!!</h1></td></tr>
+<tr><td></td><td><h2>Please enter your wine attributes below:</h2></td></tr>
+<tr><td></td><td><form  method="POST">
+
+
+    {# This hidden_tag is a CSRF security feature. #}
+    {{ form.hidden_tag() }}
+    {{ form.f_a.label }}: {{form.f_a}}
+    <br><br>
+    {{form.v_a.label}}: {{form.v_a}}
+    <br><br>
+    {{form.c_a.label}}: {{form.c_a}}
+    <br><br>
+    {{form.r_s.label}}: {{form.r_s}}
+    <br><br>
+    {{form.chl.label}}: {{form.chl}}
+    <br><br>
+    {{form.f_s_d.label}}: {{form.f_s_d}}
+    <br><br>
+    {{form.t_s_d.label}}: {{form.t_s_d}}
+    <br><br>
+    {{form.den.label}}: {{form.den}}
+    <br><br>
+    {{form.ph.label}}: {{form.ph}}
+    <br><br>
+    {{form.sul.label}}: {{form.sul}}
+    <br><br>
+    {{form.alc.label}}: {{form.alc}}
+    <br><br>
+    {{form.qua.label}}: {{form.qua}}
+    <br><br></td></tr>
+<tr><td></td><td>{{form.submit()}}
+</form></td></tr>
+</table></center>
